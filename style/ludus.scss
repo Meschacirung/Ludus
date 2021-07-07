@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.link-name{
+    @apply flex relative;
+}
+
+.link-name::after{
+    content:"";
+    height:2px;
+    width:0px;
+    @apply bg-green-500 absolute -bottom-3 transition-all duration-200;
+}
+
+.link:hover .link-name::after{
+    @apply w-full;
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .car-img{
+        height:60vh;
+        @apply object-cover;
+    }
+}
+
+@media (min-width: 0px) and (max-width:768px) {
+    .car-img{
+        height:80vh;
+        @apply object-cover;
+    }
+}

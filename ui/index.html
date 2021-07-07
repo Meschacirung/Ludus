@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludus</title>
+
+    <link rel="stylesheet" href="../style/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/splide/splide.min.css">
+    <link rel="stylesheet" href="../style/splide/splide-core.min.css">
+</head>
+<body>
+    
+    <header class="relative z-50">
+        <nav role="navigation">
+            <div>
+                <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4 py-6">
+                    <div class="flex justify-between items-center w-full">
+                        <div>
+                            <h2 class="text-green-500 text-2xl">Ludus</h2>
+                        </div>
+                        <div>
+                            <a href="" target="blank" class="h-10 w-10 rounded bg-gray-100 bg-opacity-0 flex justify-center items-center hover:bg-opacity-75 transition-all duration-300">
+                                
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="md:overflow-x-hidden overflow-x-auto border-t-2 border-gray-50">
+                    <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+                        <div class="flex items-center justify-between">
+                            <ul class="flex items-center text-gray-500">
+                                <li class="lg:-ml-6 link">
+                                    <a href="" class="block py-3 px-6 bg-gray-50 hover:text-gray-600 transition-all duration-300">
+                                        <div class="link-name">
+                                            Accueil
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="" class="block py-3 px-6 bg-gray-50 bg-opacity-0 hover:bg-opacity-75 hover:text-gray-600 transition-all duration-300">
+                                        <div class="link-name w-max">
+                                            Nos salles
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="" class="block py-3 px-6 bg-gray-50 bg-opacity-0 hover:bg-opacity-75 hover:text-gray-600 transition-all duration-300">
+                                        <div class="link-name">
+                                            Localisation
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <div class="md:px-0 px-4">
+                                <a href="" class="block py-3 px-6 bg-green-400 hover:bg-green-500 focus:bg-green-700 transition-all duration-200  text-white">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <div id="hero" class="relative">
+
+        <div class="splide" id="herocar">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <img src="../images/chasse-sauvage-fSJSiczZBVQ-unsplash.jpg" class="car-img w-full" alt="">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="../images/chasse-sauvage.jpg" class="car-img w-full" alt="">
+                    </div>
+                    <div class="splide__slide">
+                        <img src="../images/chasse-sauvage-fSJSiczZBVQ.jpg" class="car-img w-full" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="z-40 absolute h-full w-full top-0 bottom-0">
+
+            <div class="bg-gray-900 bg-opacity-60 w-full h-full flex iems-center">
+                <div class="z-40 relative lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+                    <div class="mb-10">
+                        <h1 class="text-white font-semibold lg:text-6xl md:text-5xl text-4xl">Trouver une salle pour tous vos événements.</h1>
+                        <p class="mt-8 text-yellow-300">Bénéficiez jusqu'à 10% de réduction.</p>
+                    </div>
+                    
+                    <form action="" class="bg-white rounded-md shadow-xl flex md:flex-nowrap flex-wrap w-full">
+                        <input type="search" placeholder="Rechercher une salle" class="w-8/12 py-6 md:px-8 px-6 outline-none bg-transparent">
+                        <div class="flex md:border-none border-t border-gray-50">
+                            <select name="roomstype" id="roomstype" class="md:px-8 px-6 py-4 md:py-6 bg-transparent outline-none">
+                                <option value="Wedding">Mariage</option>
+                                <option value="Birthday">Anniversaire</option>
+                                <option value="Conférence">Conf</option>
+                            </select>
+                            <input type="date" name="date" id="date" class="md:px-8 px-6 py-4 md:py-6 bg-transparent">    
+                        </div>
+                        
+                        <button type="submit" class="px-8 py-4 md:py-6 md:w-auto  w-full md:rounded-r-md md:rounded-b-none rounded-b-md text-white bg-green-500 hover:bg-green-600 focus:bg-green-700">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../js/app.js" defer></script>
+    <script src="../js/splide.min.js"> </script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#herocar', {
+                perPage : 1,
+                perMove : 1,
+                autoHeight : true,
+                pagination:false,
+                arrows : false ,
+                responsive:true,    
+                autoplay:true,
+            } ).mount();
+        } );
+    </script>
+</body>
+</html>
