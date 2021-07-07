@@ -96,7 +96,7 @@
                     </div>
                     
                     <form action="" class="bg-white rounded-md shadow-xl flex md:flex-nowrap flex-wrap w-full">
-                        <input type="search" placeholder="Rechercher une salle" class="w-8/12 py-6 md:px-8 px-6 outline-none bg-transparent">
+                        <input type="search" placeholder="Rechercher une salle" class="md:w-7/12 py-6 md:px-8 px-6 outline-none bg-transparent">
                         <div class="flex md:border-none border-t border-gray-50">
                             <select name="roomstype" id="roomstype" class="w-6/12 md:px-8 px-6 py-4 md:py-6 bg-transparent outline-none">
                                 <option value="Wedding">Mariage</option>
@@ -114,11 +114,80 @@
         </div>
     </div>
 
+    <div class="md:my-24 my-12">
+        <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+            <h1 class="text-3xl text-gray-700">Catégories</h1>
+            <div class="splide categories">
+                <div class="splide__track lg:py-16 py-8 -mx-4 px-4">
+                    <div class="splide__list space-x-4">
+
+                        <div class="splide__slide">
+                            <div class="flex justify-center items-center text-center relative group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                
+                                <div class="z-20 transform absolute bottom-0 pb-6 w-full h-full flex items-center justify-center rounded-xl bg-gray-900 bg-opacity-30 backdrop-filter hove:backdrop-blur">
+                                    <h2 class="lg:text-2xl text-lg text-white mt-6">Anniversaire</h2>
+                                </div>
+                                <img src="../images/syamsul-arifin-y9eL9pm5mAo-unsplash.jpg" class="object-cover h-40 w-full rounded-xl" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="flex justify-center items-center text-center relative group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                
+                                <div class="z-20 transform absolute bottom-0 pb-6 w-full h-full flex items-center justify-center rounded-xl bg-gray-900 bg-opacity-30 backdrop-filter hove:backdrop-blur">
+                                    <h2 class="lg:text-2xl text-lg text-white mt-6">Anniversaire</h2>
+                                </div>
+                                <img src="../images/syamsul-arifin-y9eL9pm5mAo-unsplash.jpg" class="object-cover h-40 w-full rounded-xl" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="flex justify-center items-center text-center relative group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                
+                                <div class="z-20 transform absolute bottom-0 pb-6 w-full h-full flex items-center justify-center rounded-xl bg-gray-900 bg-opacity-30 backdrop-filter hove:backdrop-blur">
+                                    <h2 class="lg:text-2xl text-lg text-white mt-6">Anniversaire</h2>
+                                </div>
+                                <img src="../images/syamsul-arifin-y9eL9pm5mAo-unsplash.jpg" class="object-cover h-40 w-full rounded-xl" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="flex justify-center items-center text-center relative group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                
+                                <div class="z-20 transform absolute bottom-0 pb-6 w-full h-full flex items-center justify-center rounded-xl bg-gray-900 bg-opacity-30 backdrop-filter hove:backdrop-blur">
+                                    <h2 class="lg:text-2xl text-lg text-white mt-6">Anniversaire</h2>
+                                </div>
+                                <img src="../images/syamsul-arifin-y9eL9pm5mAo-unsplash.jpg" class="object-cover h-40 w-full rounded-xl" alt="">
+                                
+                            </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="flex justify-center items-center text-center relative group cursor-pointer transform hover:-translate-y-1 transition-transform duration-300">
+                
+                                <div class="z-20 transform absolute bottom-0 pb-6 w-full h-full flex items-center justify-center rounded-xl bg-gray-900 bg-opacity-30 backdrop-filter hove:backdrop-blur">
+                                    <h2 class="lg:text-2xl text-lg text-white mt-6">Anniversaire</h2>
+                                </div>
+                                <img src="../images/syamsul-arifin-y9eL9pm5mAo-unsplash.jpg" class="object-cover h-40 w-full rounded-xl" alt="">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../js/app.js" defer></script>
     <script src="../js/splide.min.js"> </script>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
             new Splide( '#herocar', {
+                carousel:true,
                 perPage : 1,
                 perMove : 1,
                 autoHeight : true,
@@ -126,6 +195,28 @@
                 arrows : false ,
                 responsive:true,    
                 autoplay:true,
+            } ).mount();
+            new Splide( '.categories', {
+                carousel:true,
+                perPage :4,
+                perMove : 1,
+                autoHeight : true,
+                pagination:false,
+                arrows : true ,
+                responsive:true,    
+                autoplay:true,
+                breakpoints : {
+                    640: {
+                        perPage: 2,
+                        autoplay : false,
+                        arrows : false,
+                    },
+                    768: {
+                        perPage: 2,
+                        autoplay : false,
+                        arrows:false,
+                    }
+                }
             } ).mount();
         } );
     </script>
