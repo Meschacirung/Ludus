@@ -32267,6 +32267,49 @@ body{
   }
 }
 
+.scrollbar-black::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: transparent
+}
+
+.scrollbar-black::-webkit-scrollbar {
+  width: 0.5rem;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-color: transparent;
+  -webkit-transition-property: all;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity))
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #9ca3af;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(156, 163, 175, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #d1d5db, var(--tw-gradient-to, rgba(209, 213, 219, 0));
+  --tw-gradient-to: #9ca3af
+}
+
+.scroller{
+  overflow-y: scroll;
+  scrollbar-color: #536081 #171b2700;
+  scrollbar-width:thin;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
