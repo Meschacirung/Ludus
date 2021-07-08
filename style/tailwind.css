@@ -32222,6 +32222,10 @@ video {
 
 body{
   font-family: 'Poppins', sans-serif;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 .link-name{
