@@ -32292,16 +32292,28 @@ body{
 
 .scrollbar-black::-webkit-scrollbar-thumb {
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(209, 213, 219, var(--tw-bg-opacity))
+  background-color: transparent
+}
+
+@media (min-width: 1024px) {
+  .scrollbar-black::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
 }
 
 .scrollbar-black::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  background-color: transparent;
   --tw-gradient-from: #9ca3af;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(156, 163, 175, 0));
   --tw-gradient-stops: var(--tw-gradient-from), #d1d5db, var(--tw-gradient-to, rgba(209, 213, 219, 0));
   --tw-gradient-to: #9ca3af
+}
+
+@media (min-width: 1024px) {
+  .scrollbar-black::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
 }
 
 .scroller{
