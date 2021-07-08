@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event All - Login </title>
+    <title>Event All - Signin </title>
 
     <link rel="stylesheet" href="../style/tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -16,24 +16,20 @@
             <a href="" class="text-green-400 text-2xl block text-center">Event All</a>
 
             <div class="pt-10 pb-12 md:px-12 px-6 shadow-md rounded-lg bg-white mt-10">
-                <h2 class="text-2xl text-gray-700 font-medium">Connectez-vous</h2>
-                <form action="" class="space-y-8 mt-8">
+                <h2 class="text-2xl text-gray-700 font-medium">Inscrivez-vous</h2>
+                <form action="" class="space-y-6 mt-8">
                     <input autocomplete="email" required type="email" placeholder="Adresse e-mail" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                    <input autocomplete="name" required type="text" placeholder="Votre nom complet" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
                     
-                    <div class="flex flex-wrap">
+                    <div class="space-y-6">
                         <input required type="password" placeholder="Mot de passe" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
-                        <button class="ml-auto text-sm w-max mt-2 -mb-4 text-blue-400 p-3 bg-blue-50 bg-opacity-0 hover:text-blue-600 focus:bg-opacity-100 rounded transition-all">Mot de passe oublié ?</button>
+                        <input required type="password" placeholder="Confirmer le mot de passe" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
                     </div>
                     
-                    <div class="flex items-center gap-2">
-                        <input type="checkbox" name="autoconnect" id="autoconnect">
-                        <label class="text-sm text-gray-500" for="autoconnect">Se souvenir de moi</label>
-                    </div>
-                    
-                    <button class="w-full py-3 text-sm rounded bg-green-400 hover:bg-green-600 focus:bg-green-700 transition-all duration-200 text-white">Continuer</button>
+                    <button type="submit" class="w-full py-3 text-sm rounded bg-green-400 hover:bg-green-600 focus:bg-green-700 transition-all duration-200 text-white">Continuer</button>
                 
                     <div class="border-t border-gray-100 pt-6">
-                        <a href="" class="text-sm text-blue-500 p-3 bg-blue-50 bg-opacity-0 hover:text-blue-600 focus:bg-opacity-100 rounded transition-all">Créer un nouveau compte</a>
+                        <a href="" class="text-sm text-blue-500 p-3 bg-blue-50 bg-opacity-0 hover:text-blue-600 focus:bg-opacity-100 rounded transition-all">Se connecter</a>
                     </div>
                 </form>
             </div>
