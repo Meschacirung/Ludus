@@ -4,20 +4,16 @@ let filterBtn = document.querySelector('#fBtn')
 let filterD = document.querySelector('#fDismiss')
 let filters = document.querySelector('#filters').classList
 
-console.log(filters)
-
 menu.addEventListener('click', function(){
     if (nav.contains('hidden')){
         nav.remove('hidden')
         setTimeout(function(){
-            nav.remove('h-0')
-            nav.add('h-64')
+            nav.replace('h-0', 'h-64')
         }.bind(this), 1)
     } 
     
     else {
-        nav.add('h-0')
-        nav.remove('h-64')
+        nav.replace('h-64', 'h-0')
         setTimeout(function(){
             nav.add('hidden')
         }.bind(this), 300)
