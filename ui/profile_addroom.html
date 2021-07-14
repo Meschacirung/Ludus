@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <header class="relative z-50">
+        <nav role="navigation" class="bg-white">
+            <div class="flex justify-center lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+                <div class="w-full flex gap-4 items-center justify-between md:py-4 py-2 md:overflow-x-hidden overflow-x-auto">
+
+                    <div>
+                        <h2 class="text-green-500 text-2xl">Ludus</h2>
+                    </div>
+
+                    <div>
+                        <img src="../images/chasse-sauvage.jpg" alt="" class="w-10   h-10  rounded-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <div class="md:py-8">
+        <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4 relative">
+            <div class="lg:flex gap-8 ">
+                <div class="lg:w-8/12 ">
+                    <div class="flex items-center gap-4 mt-4">
+                        <button class="h-10 w-10 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 flex justify-center items-center focus:bg-gray-200 transition-all duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-7" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+                            </svg>
+                        </button>
+                        <h1 class="text-2xl text-gray-700 font-semibold">Ajouter une salle</h1>
+                    </div>
+                    <div class="md:mx-0 -mx-4 px-8 bg-white md:rounded-lg md:shadow-md md:p-8 p-4 md:mt-8 mt-4">
+                        <h2 class="text-gray-700 text-xl font-semibold -ml-4 flex items-center gap-4"><div class="border-2 border-gray-100 text-gray-400 rounded-full h-12 w-12 flex justify-center items-center">1</div>  Infos générales</h2>
+                        <form action="" method="" class="md:mt-8 mt-4 md:space-y-8 space-y-4 ml-12  ">
+                            <div class="md:flex gap-4">
+                                <div class="space-y-4 md:w-8/12">
+                                    <label for="name" class="text-gray-500">Nom de la salle<span class="text-yellow-400 text-lg">*</span> </label>
+                                    <input name="name" id="name" type="email" placeholder="Où se trouve la salle" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                                </div>
+
+                                <div class="space-y-4 md:w-4/12">
+                                    <label for="capacity" class="text-gray-500">Capacité<span class="text-yellow-400 text-lg">*</span> </label>
+                                    <input name="capacity" id="capacity" type="email" placeholder="Nombre des places" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <label for="capacity" class="text-gray-500">Prix<span class="text-yellow-400 text-lg">*</span> </label>
+                                <input name="capacity" id="capacity" type="email" placeholder="Nombre des places" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                            </div>
+
+                            <div class="space-y-4">
+                                <label for="desc" class="text-gray-500">Description<span class="text-yellow-400 text-lg">*</span> </label>
+                                <textarea name="desc" id="desc" cols="30" rows="4" placeholder="Décrivez votre salle" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="md:mx-0 -mx-4 px-8 bg-white md:rounded-lg md:shadow-md md:p-8 p-4 md:mt-8 mt-4">
+                        <h2 class="text-gray-700 text-xl font-semibold -ml-4 flex items-center gap-4"><div class="border-2 border-gray-100 text-gray-400 rounded-full h-12 w-12 flex justify-center items-center">2</div>  Adresses</h2>
+                        <form action="" method="" class="md:mt-8 mt-4 md:space-y-8 space-y-4 ml-12  ">
+
+                            <div class="md:flex md:space-y-0 space-y-4 gap-4">
+                                <div class="space-y-4">
+                                    <label for="date" class="text-gray-500">Quartier <span class="text-yellow-400 text-lg">*</span></label>
+                                    <input name="name" id="name" autocomplete="name" type="text" placeholder="Quartier" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                                </div>
+                                <div class="space-y-4">
+                                    <label for="date" class="text-gray-500">Avenue <span class="text-yellow-400 text-lg">*</span></label>
+                                    <input name="name" id="name" autocomplete="name" type="text" placeholder="Avenue" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                                </div>
+                                <div class="space-y-4">
+                                    <label for="date" class="text-gray-500">N° <span class="text-yellow-400 text-lg">*</span></label>
+                                    <input name="name" id="name" autocomplete="name" type="text" placeholder="Numéro" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <label for="name" class="text-gray-500">Référence </label>
+                                <input name="email" id="email" type="email" placeholder="Où se trouve la salle" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="md:mx-0 -mx-4 px-8 bg-white md:rounded-lg md:shadow-md md:p-8 p-4 md:mt-8 mt-4">
+                        <h2 class="text-gray-700 text-xl font-semibold -ml-4 flex items-center gap-4"><div class="border-2 border-gray-100 text-gray-400 rounded-full h-12 w-12 flex justify-center items-center">3</div>Images</h2>
+
+                        <form action="" method="" class="md:mt-8 mt-4 md:space-y-8 space-y-4 ml-12  ">
+                            <div class="py-16 rounded-xl border-2 border-dashed border-gray-300">
+                                <div>
+                                    <h5 class="mb-6 text-center text-lg text-gray-700">Ajouter des photos de votre salle</h5>
+                                    <div class="w-max m-auto">
+                                        <label for="images" class="px-5 py-3 rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 cursor-pointer">Charger une photo</label>
+                                        <input type="file" name="images" id="images" class="hidden">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="" id="uploaded_images">
+                                <div class="grid justify-center m-auto w-auto text-center">
+                                    <img src="../images/gallery.svg" class="w-16 m-auto" alt="file icon">
+                                    <p class="text-gray-500 mt-3">Pas de fichier sélectionné</p>
+                                </div>
+                                
+                            </div>
+                            <div class="w-max ml-auto pt-8">
+                                <button class="py-3 px-6 bg-green-500 hover:bg-green-600 focus:bg-green-700 text-white outline-none transition-colors rounded">Enregistrer la salle</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="lg:w-4/12 lg:block hidden  lg:mt-0 mt-4">
+                    <div class="grid lg:sticky top-8">
+                        <div class="p-4 bg-white md:rounded-lg md:shadow-md">
+                            <div class="flex gap-6">
+                                <img src="../images/achievement.svg" class="w-20" alt="">
+                                <div>
+                                    <h5 class="text-gray-700 text-xl font-medium">Réservation</h5>
+                                    <p class="text-gray-500 mt-4">2 des vos salles ont été réservées cette semaine</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-white md:rounded-lg md:shadow-md p-4">
+                            <h4 class="text-gray-700 font-medium text-xl">Salles</h4>
+    
+                            <div class="grid grid-cols-3 gap-2 mt-4">
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
