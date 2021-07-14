@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../style/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100">
+    <header class="relative z-50">
+        <nav role="navigation" class="bg-white">
+            <div class="flex justify-center lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
+                <div class="w-full flex gap-4 items-center justify-between md:py-4 py-2 md:overflow-x-hidden overflow-x-auto">
+
+                    <div>
+                        <h2 class="text-green-500 text-2xl">Ludus</h2>
+                    </div>
+
+                    <div>
+                        <img src="../images/chasse-sauvage.jpg" alt="" class="w-10   h-10  rounded-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+
+    <div class="md:py-8">
+        <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 relative">
+            <div class="lg:flex gap-8 ">
+                <div class="lg:w-8/12 ">
+
+                    <div class="md:shadow-md md:rounded-lg">
+                        <div class="relative lg:rounded-lg">
+                            <div class="absolute -bottom-16 md:left-8 left-4 w-max">
+                                <div class="relative">
+                                    <!-- profile file input-->
+                                    <div class="absolute bottom-0 rounded-b-full md:h-40 w-32 md:w-40 h-32 rounded-full border-8 border-white bg-gray-900 hover:bg-opacity-75 bg-opacity-60 transition-all flex justify-center items-center">
+                                        <form action="">
+                                            <label for="photo" class="md:py-16 py-12 md:px-10 px-6 rounded-full text-white cursor-pointer">
+                                                Changer
+                                            </label>
+                                            <input type="file" id="photo" name="photo" class="hidden">
+                                        </form>
+                                    </div>
+                                    <!-- profile file input-->
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="md:h-40 w-32 md:w-40 h-32 rounded-full object-cover border-8 border-white">
+                                </div> 
+                            </div>
+                            <!-- Cover file input-->
+                            <div class="absolute left-0 right-0 top-0 bottom-0 w-max m-auto h-min  flex justify-center items-center">
+                                        
+                                <form action="">
+
+                                    <label for="cover" class="py-2 px-4 rounded-full text-white cursor-pointer bg-gray-900 hover:bg-opacity-75 bg-opacity-60 transition-all">
+                                        Changer la couverture
+                                    </label>
+                                    <input type="file" id="cover" name="cover" class="hidden">
+                                </form>
+                                    
+                            </div>
+                            <!-- Cover file input-->
+                            <img src="../images/jr-korpa-BVtQDj-jPo4-unsplash.jpg" class="w-full md:h-56 h-40 object-cover lg:rounded-t-lg" alt="">
+                        </div>
+    
+                        <div class="bg-white md:p-8 px-4 py-8 md:pt-16 pt-12 lg:rounded-b-lg">
+                            <h4 class="text-2xl text-gray-700 font-semibold mt-4">Jane DOE</h4>
+                            <p class="text-gray-500">Events organizer</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white md:rounded-lg md:shadow-md md:p-8 p-4 md:mt-8 mt-4">
+                        <h2 class="text-gray-700 text-2xl font-semibold">Informations personnelles</h2>
+                        <form action="" method="" class="md:mt-8 mt-4 md:space-y-8 space-y-4">
+                            <div class="space-y-4">
+                                <label for="name" class="text-gray-500">Nom </label>
+                                <input name="name" id="name" autocomplete="name" type="text" placeholder="Méschac Irung" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                            </div>
+
+                            <div class="space-y-4">
+                                <label for="name" class="text-gray-500">Email </label>
+                                <input name="email" id="email" type="email" placeholder="meschacirung@gmail.com" class="text-sm outline-none w-full border-2 rounded bg-gray-50 border-gray-200 px-4 py-3 focus:border-indigo-300 transition-all">
+                            </div>
+
+                            <div class="w-max ml-auto">
+                                <button class="py-3 px-6 bg-green-500 hover:bg-green-600 focus:bg-green-700 text-white outline-none transition-colors rounded">Confirmer</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="lg:w-4/12 lg:mt-0 mt-4">
+                    <div class="grid lg:sticky top-8">
+                        <div class="p-4 bg-white md:rounded-lg md:shadow-md">
+                            <div class="flex gap-6">
+                                <img src="../images/achievement.svg" class="w-20" alt="">
+                                <div>
+                                    <h5 class="text-gray-700 text-xl font-medium">Réservation</h5>
+                                    <p class="text-gray-500 mt-4">2 des vos salles ont été réservées cette semaine</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 bg-white md:rounded-lg md:shadow-md p-4">
+                            <h4 class="text-gray-700 font-medium text-xl">Salles</h4>
+    
+                            <div class="grid grid-cols-3 gap-2 mt-4">
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                                <a href="room.html">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
