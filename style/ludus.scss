@@ -42,18 +42,22 @@ body{
 }
 
 .scrollbar-black::-webkit-scrollbar {
-    @apply w-2 transform bg-transparent transition-all duration-300
+    @apply w-2 transform bg-transparent transition-all duration-300;
 }
 .scrollbar-black::-webkit-scrollbar-thumb {
-    @apply rounded-full lg:bg-gray-300 bg-transparent
+    @apply rounded-full lg:bg-gray-300 bg-transparent;
 }
 
 .scrollbar-black::-webkit-scrollbar-thumb:hover {
-    @apply lg:bg-gradient-to-b from-gray-400 via-gray-300 to-gray-400 bg-transparent
+    @apply lg:bg-gradient-to-b from-gray-400 via-gray-300 to-gray-400 bg-transparent;
 }
 
 .scroller{
     overflow-y: scroll;
     scrollbar-color: #536081 #171b2700;
     scrollbar-width:thin;
+}
+
+.user:hover div{
+    height:200px !important;
 }

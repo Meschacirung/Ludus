@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="../style/splide/splide-core.min.css">
 </head>
 <body class="bg-gray-100">
-    <header class="relative z-50 ">
-        <nav role="navigation" class="">
-            <div class="lg:bg-transparent bg-white lg:border-none border-b border-gray-100 fixed lg:top-3 top-0 left-0 right-0 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 ">
-                <div class="w-full flex gap-4 items-center justify-between bg-white lg:rounded-lg px-4 lg:py-1 py-2 md:overflow-x-hidden overflow-x-auto">
+    <header class="bg-gray-100 bg-opacity-75 backdrop-filter backdrop-blur-2xl z-50 fixed top-0 lg:pt-3 left-0 right-0">
+        <nav role="navigation">
+            <div class="lg:bg-transparent bg-white lg:border-none border-b border-gray-100 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 ">
+                <div class="relative w-full flex gap-4 items-center justify-between bg-white lg:rounded-lg px-4 lg:py-1 py-2">
 
                     <div>
                         <h2 class="text-green-500 text-2xl">Ludus</h2>
@@ -35,9 +35,38 @@
                         </form>
                     </div>
 
-                    <button class="p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
-                        <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
-                    </button>
+                    <div class="user">
+                        <button class="p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
+                            <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                        </button>
+
+                        <div style="z-index:200;" class="absolute md:right-0 right-2 top-20 -mt-4 w-max">
+                            <div class="user-dropdown bg-white rounded-lg px-4 shadow-md h-0 overflow-y-hidden transition-all duration-300">
+                                <h5 class="text-lg text-gray-700 font-medium mt-4">Méschac Irung</h5>
+                                <ul class="-mx-3 pt-1 mt-4 border-t">
+                                    <li>
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/favorites.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Mon profil</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/profile/settings.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Paramètres</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/profile/log-out.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Se déconnecter</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -86,48 +115,37 @@
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16">
             <div class="lg:flex gap-8 flex-wrap lg:flex-nowrap">
                 <div class="lg:w-2/12">
-                    <div class="w-2/12 fixed lg:block hidden">
-                        <h2 class="text-sm font-normal uppercase text-gray-400 dark:text-gray-500 tracking-widest">Découvrir</h2>
+                    <div class="w-2/12 fixed top-0 lg:grid items-end bottom-8 mt-auto hidden">
+                        
                         <ul class="-ml-4 mt-8 space-y-3 text-gray-600 dark:text-gray-300">
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
-                                <img src="../images/icons/family-chat.svg" class="w-6" alt="">
-                                Home
+                            <li class="cursor-pointer bg-gray-200 dark:bg-blue-100 bg-opacity-50 hover:bg-opacity-75 rounded transition-all duration-200">
+                                <a href="profile.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/event.svg" class="w-6" alt="">
+                                    Accueil
+                                </a>
                             </li>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
-                                <img src="../images/icons/categories.svg" class="w-6" alt="">
-                                Categories
+                            <li class="cursor-pointer bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
+                                <a href="user.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/bell.svg" class="w-6" alt="">
+                                    Mon profil
+                                </a>
                             </li>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
-                                <img src="../images/icons/bell.svg" class="w-6" alt="">
-                                Annonce
-                            </li>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
-                                <img src="../images/icons/promotions.svg" class="w-6" alt="">
-                                Promotion
-                            </li>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-50 hover:bg-opacity-75 rounded transition-all duration-200">
-                                <img src="../images/icons/event.svg" class="w-6" alt="">
-                                Evénements
-                            </li>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
-                                <img src="../images/icons/favorites.svg" class="w-6" alt="">
-                                Favoris
+                            <li class="cursor-pointer  bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
+                                <a href="profile_edit.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/profile/settings.svg" class="w-6" alt="">
+                                    Paramètres
+                                </a>
                             </li>
                         </ul>
         
-                        <ul class="-ml-4 text-gray-600 dark:text-gray-300 mt-8 pt-8 border-t">
-                            <span class="text-sm ml-4 text-green-400 tracking-wider">Mode</span>
-                            <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
-                                <img src="../images/icons/night.svg" class="w-6" alt="">
-                                Sombre
-                                <div class="relative inline-block w-10 ml-auto align-middle select-none transition-all duration-500 ease-in-out">
-                                    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
-                                    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="-ml-4 pl-4 text-gray-600 dark:text-gray-300 pt-8 border-t">
+                            
+                            <span class="text-sm text-green-400 tracking-wider">Event All</span>
+                            <p class="text-xs text-gray-400 mt-4">&copy; Copyright 2021 | Tous droits réservés</p>
+                        </div>
                     </div>
                 </div>
+
                 <div class="lg:w-6/12 m-auto ">
 
                     <div class="lg:pt-0 pt-16">
@@ -394,7 +412,7 @@
                     
                 </div>
 
-                <div class="lg:w-3/12 ml-auto ">
+                <div class="lg:w-3/12 ml-auto">
                     <div class="w-11/12 ml-auto sticky top-20 lg:block hidden">
                         <h3 class="text-lg font-medium text-gray-600">Publicité</h3>
                         <div class="mt-4">

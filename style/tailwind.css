@@ -32287,12 +32287,12 @@ body{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  transition-duration: 300ms
+  transition-duration: 300ms;
 }
 
 .scrollbar-black::-webkit-scrollbar-thumb {
   border-radius: 9999px;
-  background-color: transparent
+  background-color: transparent;
 }
 
 @media (min-width: 1024px) {
@@ -32307,7 +32307,7 @@ body{
   --tw-gradient-from: #94a3b8;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(148, 163, 184, 0));
   --tw-gradient-stops: var(--tw-gradient-from), #cbd5e1, var(--tw-gradient-to, rgba(203, 213, 225, 0));
-  --tw-gradient-to: #94a3b8
+  --tw-gradient-to: #94a3b8;
 }
 
 @media (min-width: 1024px) {
@@ -32320,6 +32320,10 @@ body{
   overflow-y: scroll;
   scrollbar-color: #536081 #171b2700;
   scrollbar-width:thin;
+}
+
+.user:hover div{
+  height:200px !important;
 }
 
 @media (min-width: 640px) {
