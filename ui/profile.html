@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style/splide/splide-core.min.css">
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gray-100 bg-opacity-75 backdrop-filter backdrop-blur-2xl z-50 fixed top-0 lg:pt-3 left-0 right-0">
+    <header class="bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-2xl z-50 fixed top-0 lg:pt-3 left-0 right-0">
         <nav role="navigation">
             <div class="lg:bg-transparent bg-white lg:border-none border-b border-gray-100 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 ">
                 <div class="relative w-full flex gap-4 items-center justify-between bg-white lg:rounded-lg px-4 lg:py-1 py-2">
@@ -75,12 +75,12 @@
     <div class="fixed bottom-0 w-full bg-white shadow-2xl lg:hidden" style="z-index:100;">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 px-4">
             <div class="flex gap-4 justify-between">
-                <button class="text-gray-500 px-2 py-2">
+                <button id="home" class="text-green-500 px-2 py-2 transition-all duration-200">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-5 m-auto text-gray-500" viewBox="0 0 27 30">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 m-auto " viewBox="0 0 27 30">
                         <g id="event" transform="translate(412.382 -27)">
-                          <path d="M24.8,16.59,23.2,15l-7.32,7.32L12.7,19.14l-1.59,1.59,4.77,4.77ZM28.5,4.5H27v-3H24v3H12v-3H9v3H7.5a2.986,2.986,0,0,0-2.985,3L4.5,28.5a3,3,0,0,0,3,3h21a3.009,3.009,0,0,0,3-3V7.5A3.009,3.009,0,0,0,28.5,4.5Zm0,24H7.5V12h21Z" transform="translate(-416.882 25.5)"/>
-                          <path d="M6.615,19.23l1.59-1.59,3.18,3.18L18.7,13.5l1.177,1.177V15.5l-8.5,8.5Z" transform="translate(-412.382 27)" class="fill-current text-gray-300"/>
+                          <path id="eventCal" class="fill-current text-green-300 transition-all duration-200" d="M24.8,16.59,23.2,15l-7.32,7.32L12.7,19.14l-1.59,1.59,4.77,4.77ZM28.5,4.5H27v-3H24v3H12v-3H9v3H7.5a2.986,2.986,0,0,0-2.985,3L4.5,28.5a3,3,0,0,0,3,3h21a3.009,3.009,0,0,0,3-3V7.5A3.009,3.009,0,0,0,28.5,4.5Zm0,24H7.5V12h21Z" transform="translate(-416.882 25.5)"/>
+                          <path id="eventCheck" class="fill-current text-green-500 transition-all duration-200" d="M6.615,19.23l1.59-1.59,3.18,3.18L18.7,13.5l1.177,1.177V15.5l-8.5,8.5Z" transform="translate(-412.382 27)" />
                         </g>
                     </svg>
                       
@@ -88,29 +88,29 @@
                     <span class="text-sm">Accueil</span>
                 </button>
 
-                <button class="text-green-500 px-2 py-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current stroke-current w-5 m-auto" viewBox="0 0 31.25 31.25">
-                        <g id="Icon_ionic-ios-chatbubbles" data-name="Icon ionic-ios-chatbubbles" transform="translate(-2.375 -2.375)">
-                          <path id="Path_12" data-name="Path 12" d="M30.3,22.542a1.7,1.7,0,0,1,.232-.858,2.368,2.368,0,0,1,.148-.218,11.393,11.393,0,0,0,1.941-6.349A11.961,11.961,0,0,0,20.412,3.375,12.129,12.129,0,0,0,8.438,12.72a11.3,11.3,0,0,0-.26,2.4A11.927,11.927,0,0,0,20.2,27.014a14.48,14.48,0,0,0,3.319-.541c.795-.218,1.582-.506,1.786-.584a1.859,1.859,0,0,1,.654-.12,1.828,1.828,0,0,1,.71.141l3.987,1.413a.951.951,0,0,0,.274.07.56.56,0,0,0,.563-.562.9.9,0,0,0-.035-.19Z" class="fill-current opacity-95" stroke-width="3"/>
-                          <path id="Path_13" data-name="Path 13" d="M22.395,27.6c-.253.07-.577.148-.928.225a12.977,12.977,0,0,1-2.391.316A11.927,11.927,0,0,1,7.052,16.249a13.293,13.293,0,0,1,.105-1.5c.042-.3.091-.6.162-.9.07-.316.155-.633.246-.942L7,13.4A10.464,10.464,0,0,0,3.375,21.27a10.347,10.347,0,0,0,1.744,5.766c.162.246.253.436.225.563s-.837,4.359-.837,4.359a.564.564,0,0,0,.19.541.573.573,0,0,0,.359.127.5.5,0,0,0,.2-.042L9.2,31.029a1.1,1.1,0,0,1,.844.014,11.834,11.834,0,0,0,4.268.844,11.043,11.043,0,0,0,8.445-3.874s.225-.309.485-.675C22.985,27.429,22.69,27.52,22.395,27.6Z"class="fill-current text-green-300"/>
+                <button id="chat" class="text-gray-500 px-2 py-2 transition-all duration-200">
+                    <svg id="chatIcon" xmlns="http://www.w3.org/2000/svg" class="stroke-current w-5 m-auto" viewBox="0 0 31.25 31.25">
+                        <g transform="translate(-2.375 -2.375)">
+                          <path id="bubble1" d="M30.3,22.542a1.7,1.7,0,0,1,.232-.858,2.368,2.368,0,0,1,.148-.218,11.393,11.393,0,0,0,1.941-6.349A11.961,11.961,0,0,0,20.412,3.375,12.129,12.129,0,0,0,8.438,12.72a11.3,11.3,0,0,0-.26,2.4A11.927,11.927,0,0,0,20.2,27.014a14.48,14.48,0,0,0,3.319-.541c.795-.218,1.582-.506,1.786-.584a1.859,1.859,0,0,1,.654-.12,1.828,1.828,0,0,1,.71.141l3.987,1.413a.951.951,0,0,0,.274.07.56.56,0,0,0,.563-.562.9.9,0,0,0-.035-.19Z" class="stroke-current text-gray-500 transition-all duration-500" fill="#fff" stroke-width="3"/>
+                          <path id="bubble2" d="M22.395,27.6c-.253.07-.577.148-.928.225a12.977,12.977,0,0,1-2.391.316A11.927,11.927,0,0,1,7.052,16.249a13.293,13.293,0,0,1,.105-1.5c.042-.3.091-.6.162-.9.07-.316.155-.633.246-.942L7,13.4A10.464,10.464,0,0,0,3.375,21.27a10.347,10.347,0,0,0,1.744,5.766c.162.246.253.436.225.563s-.837,4.359-.837,4.359a.564.564,0,0,0,.19.541.573.573,0,0,0,.359.127.5.5,0,0,0,.2-.042L9.2,31.029a1.1,1.1,0,0,1,.844.014,11.834,11.834,0,0,0,4.268.844,11.043,11.043,0,0,0,8.445-3.874s.225-.309.485-.675C22.985,27.429,22.69,27.52,22.395,27.6Z"class="fill-current text-gray-300 transition-all duration-200"/>
                         </g>
                     </svg>
-                      
-                                     
+
                     <span class="text-sm">Chat</span>
                 </button>
 
-                <button class="text-gray-500 px-2 py-2">
+                <a href="profile_edit.html" title="Paramètres" class="block text-gray-500 px-2 py-2">
                     <svg  xmlns="http://www.w3.org/2000/svg" class="fill-current stroke-current w-5 m-auto" viewBox="0 0 36 36">
                         <path id="Path_10" data-name="Path 10" d="M22.5,18A4.5,4.5,0,1,1,18,13.5,4.5,4.5,0,0,1,22.5,18Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="fill-current text-gray-300"/>
                         <path id="Path_11" data-name="Path 11" d="M29.1,22.5a2.475,2.475,0,0,0,.495,2.73l.09.09a3,3,0,1,1-4.245,4.245l-.09-.09a2.5,2.5,0,0,0-4.23,1.77V31.5a3,3,0,1,1-6,0v-.135A2.475,2.475,0,0,0,13.5,29.1a2.475,2.475,0,0,0-2.73.495l-.09.09A3,3,0,1,1,6.435,25.44l.09-.09a2.5,2.5,0,0,0-1.77-4.23H4.5a3,3,0,1,1,0-6h.135A2.475,2.475,0,0,0,6.9,13.5a2.475,2.475,0,0,0-.5-2.73l-.09-.09A3,3,0,1,1,10.56,6.435l.09.09a2.475,2.475,0,0,0,2.73.495h.12A2.475,2.475,0,0,0,15,4.755V4.5a3,3,0,0,1,6,0v.135a2.5,2.5,0,0,0,4.23,1.77l.09-.09a3,3,0,1,1,4.245,4.245l-.09.09a2.475,2.475,0,0,0-.5,2.73v.12A2.475,2.475,0,0,0,31.245,15H31.5a3,3,0,0,1,0,6h-.135A2.475,2.475,0,0,0,29.1,22.5Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
                     </svg>
                                      
                     <span class="text-sm">Paramètres</span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
+
     <div class="lg:pt-20 lg:pb-8 pb-14">
         <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16">
             <div class="lg:flex gap-8 flex-wrap lg:flex-nowrap">
@@ -423,7 +423,7 @@
                     </div>
 
                     <div class="fixed z-50 lg:right-16 lg:w-3/12  left-0 lg:ml-auto right-0 bottom-0 lg:mt-auto my-auto">
-                        <div class="lg:rounded-t-lg lg:rounded-b-none rounded-lg bg-white md:shadow-lg  lg:p-6 py-6 px-6 md:px-16 pb-0 lg:h-auto h-screen">
+                        <div class="lg:rounded-t-lg lg:rounded-b-none rounded-2xl bg-white md:shadow-lg  lg:p-6 py-6 px-6 md:px-16 pb-0 lg:h-auto h-0 overflow-y-hidden chat lg:block lg:visible invisible transition-all duration-500 ease-in-out lg:transform-none transform scale-90">
 
                             <!---Chat head (The user name must be hidden on chat main state)--->
                             <div class="flex items-center justify-between -mt-2 -mx-2">
@@ -647,6 +647,7 @@
         </div>
     </div>
 
+    <script src="../js/app.js"></script>
     <script src="../js/splide.min.js"> </script>
     <script>
         document.addEventListener( 'DOMContentLoaded', function () {
