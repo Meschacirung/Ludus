@@ -39,7 +39,15 @@ let bubble2 = document.querySelector('#bubble2').classList
 let eventCal = document.querySelector('#eventCal').classList
 let eventCheck = document.querySelector('#eventCheck').classList
 
+let chatConv = document.querySelectorAll('.chatConv')
+let users = document.querySelectorAll('.conv')
+let chatHome = document.querySelectorAll('.chatHome')
+
+
 chatbtn.addEventListener('click', function(){
+
+    document.querySelector('body').classList.add('overflow-hidden')
+
     chatui.remove('invisible', 'h-0', 'scale-90', 'rounded-2xl')
     chatui.add('h-screen', 'scale-100')
 
@@ -54,6 +62,7 @@ chatbtn.addEventListener('click', function(){
 })
 
 homebtn.addEventListener('click', function(){
+    document.querySelector('body').classList.remove('overflow-hidden')
     chatui.add('invisible', 'h-0', 'scale-90', 'rounded-2xl')
     chatui.remove('h-screen', 'scale-100')
 
@@ -65,4 +74,31 @@ homebtn.addEventListener('click', function(){
     eventCal.replace('text-gray-500', 'text-green-300')
     eventCheck.replace('text-gray-300', 'text-green-500')
     homebtn.classList.replace('text-gray-500', 'text-green-500')
+})
+
+users.forEach(user => {
+    user.addEventListener('click', function(){
+        chatConv.forEach(convEl => {
+            convEl.classList.remove('hidden')
+
+            setTimeout(function (){
+                convEl.classList.remove('invisible')
+                convEl.classList.add('space-y-4')
+            }.bind(this), 200)
+        });
+
+        chatHome.forEach(homeEl => {
+            homeEl.classList.add('hidden')
+        })
+    })
+})
+
+document.querySelector('#backHome').addEventListener('click', function(){
+    chatConv.forEach(convEl => {
+        convEl.classList.add('hidden')
+    });
+
+    chatHome.forEach(homeEl => {
+        homeEl.classList.remove('hidden')
+    })
 })
