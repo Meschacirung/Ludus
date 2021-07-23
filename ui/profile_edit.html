@@ -9,71 +9,148 @@
     <link rel="stylesheet" href="../style/tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="../style/splide/splide.min.css">
+    <link rel="stylesheet" href="../style/splide/splide-core.min.css">
 </head>
 <body class="bg-gray-100">
-    <header class="relative z-50">
-        <nav role="navigation" class="bg-white">
-            <div class="flex justify-center lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 px-4">
-                <div class="w-full flex gap-4 items-center justify-between md:py-4 py-2 md:overflow-x-hidden overflow-x-auto">
+    <header class="bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-2xl z-50 fixed top-0 lg:pt-3 left-0 right-0">
+        <nav role="navigation">
+            <div class="lg:bg-transparent bg-white lg:border-none border-b border-gray-100 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 ">
+                <div class="relative w-full flex gap-4 items-center justify-between bg-white lg:rounded-lg px-4 lg:py-1 py-2">
 
                     <div>
                         <h2 class="text-green-500 text-2xl">Ludus</h2>
                     </div>
 
-                    <div>
-                        <img src="../images/chasse-sauvage.jpg" alt="" class="w-10   h-10  rounded-full object-cover">
+                    <div class="lg:w-4/12 w-7/12 lg:-ml-36">
+                        <form action="">
+                            <div class="relative w-full">
+                                <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto left-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
+                                        <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
+                                    </svg> 
+                                </div>
+                                <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full rounded py-3 pr-4 pl-12 bg-gray-100 outline-none focus:bg-white focus:shadow-md transition-all">                         
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="user">
+                        <button class="p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
+                            <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                        </button>
+
+                        <div style="z-index:200;" class="absolute md:right-0 right-2 top-20 -mt-4 w-max">
+                            <div class="user-dropdown bg-white rounded-lg px-4 shadow-md h-0 overflow-y-hidden transition-all duration-300">
+                                <h5 class="text-lg text-gray-700 font-medium mt-4">Méschac Irung</h5>
+                                <ul class="-mx-3 pt-1 mt-4 border-t">
+                                    <li>
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/favorites.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Mon profil</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/profile/settings.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Paramètres</p>
+                                        </a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                            <img src="../images/icons/profile/log-out.svg" class="w-6" alt="icon Paramètres">
+                                            <p class="text-gray-600">Se déconnecter</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header> 
 
-    <div class="md:py-8">
-        <div class="lg:max-w-screen-lg max-w-screen-lg m-auto lg:px-0 md:px-16 relative">
-            <div class="lg:flex gap-8 ">
-                <div class="lg:w-8/12 ">
+    <div class="fixed bottom-0 w-full bg-white shadow-2xl lg:hidden" style="z-index:100;">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 px-4">
+            <div class="flex gap-4 justify-between">
+                <button id="home" class="text-green-500 px-2 py-2 transition-all duration-200">
 
-                    <div class="md:shadow-md md:rounded-lg">
-                        <div class="relative lg:rounded-lg">
-                            <div class="absolute -bottom-16 md:left-8 left-4 w-max">
-                                <div class="relative">
-                                    <!-- profile file input-->
-                                    <div class="absolute bottom-0 rounded-b-full md:h-40 w-32 md:w-40 h-32 rounded-full border-8 border-white bg-gray-900 hover:bg-opacity-75 bg-opacity-60 transition-all flex justify-center items-center">
-                                        <form action="">
-                                            <label for="photo" class="md:py-16 py-12 md:px-10 px-6 rounded-full text-white cursor-pointer">
-                                                Changer
-                                            </label>
-                                            <input type="file" id="photo" name="photo" class="hidden">
-                                        </form>
-                                    </div>
-                                    <!-- profile file input-->
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="md:h-40 w-32 md:w-40 h-32 rounded-full object-cover border-8 border-white">
-                                </div> 
-                            </div>
-                            <!-- Cover file input-->
-                            <div class="absolute left-0 right-0 top-0 bottom-0 w-max m-auto h-min  flex justify-center items-center">
-                                        
-                                <form action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 m-auto " viewBox="0 0 27 30">
+                        <g id="event" transform="translate(412.382 -27)">
+                          <path id="eventCal" class="fill-current text-green-300 transition-all duration-200" d="M24.8,16.59,23.2,15l-7.32,7.32L12.7,19.14l-1.59,1.59,4.77,4.77ZM28.5,4.5H27v-3H24v3H12v-3H9v3H7.5a2.986,2.986,0,0,0-2.985,3L4.5,28.5a3,3,0,0,0,3,3h21a3.009,3.009,0,0,0,3-3V7.5A3.009,3.009,0,0,0,28.5,4.5Zm0,24H7.5V12h21Z" transform="translate(-416.882 25.5)"/>
+                          <path id="eventCheck" class="fill-current text-green-500 transition-all duration-200" d="M6.615,19.23l1.59-1.59,3.18,3.18L18.7,13.5l1.177,1.177V15.5l-8.5,8.5Z" transform="translate(-412.382 27)" />
+                        </g>
+                    </svg>
+                      
+                                          
+                    <span class="text-sm">Accueil</span>
+                </button>
 
-                                    <label for="cover" class="py-2 px-4 rounded-full text-white cursor-pointer bg-gray-900 hover:bg-opacity-75 bg-opacity-60 transition-all">
-                                        Changer
-                                    </label>
-                                    <input type="file" id="cover" name="cover" class="hidden">
-                                </form>
-                                    
-                            </div>
-                            <!-- Cover file input-->
-                            <img src="../images/jr-korpa-BVtQDj-jPo4-unsplash.jpg" class="w-full md:h-56 h-40 object-cover lg:rounded-t-lg" alt="">
-                        </div>
-    
-                        <div class="bg-white md:p-8 px-4 py-8 md:pt-16 pt-12 lg:rounded-b-lg">
-                            <h4 class="text-2xl text-gray-700 font-semibold mt-4">Jane DOE</h4>
-                            <p class="text-gray-500">Events organizer</p>
+                <button id="chat" class="text-gray-500 px-2 py-2 transition-all duration-200">
+                    <svg id="chatIcon" xmlns="http://www.w3.org/2000/svg" class="stroke-current w-5 m-auto" viewBox="0 0 31.25 31.25">
+                        <g transform="translate(-2.375 -2.375)">
+                          <path id="bubble1" d="M30.3,22.542a1.7,1.7,0,0,1,.232-.858,2.368,2.368,0,0,1,.148-.218,11.393,11.393,0,0,0,1.941-6.349A11.961,11.961,0,0,0,20.412,3.375,12.129,12.129,0,0,0,8.438,12.72a11.3,11.3,0,0,0-.26,2.4A11.927,11.927,0,0,0,20.2,27.014a14.48,14.48,0,0,0,3.319-.541c.795-.218,1.582-.506,1.786-.584a1.859,1.859,0,0,1,.654-.12,1.828,1.828,0,0,1,.71.141l3.987,1.413a.951.951,0,0,0,.274.07.56.56,0,0,0,.563-.562.9.9,0,0,0-.035-.19Z" class="stroke-current text-gray-500 transition-all duration-500" fill="#fff" stroke-width="3"/>
+                          <path id="bubble2" d="M22.395,27.6c-.253.07-.577.148-.928.225a12.977,12.977,0,0,1-2.391.316A11.927,11.927,0,0,1,7.052,16.249a13.293,13.293,0,0,1,.105-1.5c.042-.3.091-.6.162-.9.07-.316.155-.633.246-.942L7,13.4A10.464,10.464,0,0,0,3.375,21.27a10.347,10.347,0,0,0,1.744,5.766c.162.246.253.436.225.563s-.837,4.359-.837,4.359a.564.564,0,0,0,.19.541.573.573,0,0,0,.359.127.5.5,0,0,0,.2-.042L9.2,31.029a1.1,1.1,0,0,1,.844.014,11.834,11.834,0,0,0,4.268.844,11.043,11.043,0,0,0,8.445-3.874s.225-.309.485-.675C22.985,27.429,22.69,27.52,22.395,27.6Z"class="fill-current text-gray-300 transition-all duration-200"/>
+                        </g>
+                    </svg>
+
+                    <span class="text-sm">Chat</span>
+                </button>
+
+                <a href="profile_edit.html" title="Paramètres" class="block text-gray-500 px-2 py-2">
+                    <svg  xmlns="http://www.w3.org/2000/svg" class="fill-current stroke-current w-5 m-auto" viewBox="0 0 36 36">
+                        <path id="Path_10" data-name="Path 10" d="M22.5,18A4.5,4.5,0,1,1,18,13.5,4.5,4.5,0,0,1,22.5,18Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="fill-current text-gray-300"/>
+                        <path id="Path_11" data-name="Path 11" d="M29.1,22.5a2.475,2.475,0,0,0,.495,2.73l.09.09a3,3,0,1,1-4.245,4.245l-.09-.09a2.5,2.5,0,0,0-4.23,1.77V31.5a3,3,0,1,1-6,0v-.135A2.475,2.475,0,0,0,13.5,29.1a2.475,2.475,0,0,0-2.73.495l-.09.09A3,3,0,1,1,6.435,25.44l.09-.09a2.5,2.5,0,0,0-1.77-4.23H4.5a3,3,0,1,1,0-6h.135A2.475,2.475,0,0,0,6.9,13.5a2.475,2.475,0,0,0-.5-2.73l-.09-.09A3,3,0,1,1,10.56,6.435l.09.09a2.475,2.475,0,0,0,2.73.495h.12A2.475,2.475,0,0,0,15,4.755V4.5a3,3,0,0,1,6,0v.135a2.5,2.5,0,0,0,4.23,1.77l.09-.09a3,3,0,1,1,4.245,4.245l-.09.09a2.475,2.475,0,0,0-.5,2.73v.12A2.475,2.475,0,0,0,31.245,15H31.5a3,3,0,0,1,0,6h-.135A2.475,2.475,0,0,0,29.1,22.5Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                    </svg>
+                                     
+                    <span class="text-sm">Paramètres</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:pt-20 lg:pb-8 pb-14">
+        <div class="lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16">
+            <div class="lg:flex gap-8 flex-wrap lg:flex-nowrap">
+                <div class="lg:w-2/12">
+                    <div class="w-2/12 fixed top-0 lg:grid items-end bottom-8 mt-auto hidden">
+                        
+                        <ul class="-ml-4 mt-8 space-y-3 text-gray-600 dark:text-gray-300">
+                            <li class="cursor-pointer bg-gray-200 dark:bg-blue-100 bg-opacity-50 hover:bg-opacity-75 rounded transition-all duration-200">
+                                <a href="profile.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/event.svg" class="w-6" alt="">
+                                    Accueil
+                                </a>
+                            </li>
+                            <li class="cursor-pointer bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
+                                <a href="user.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/bell.svg" class="w-6" alt="">
+                                    Mon profil
+                                </a>
+                            </li>
+                            <li class="cursor-pointer  bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
+                                <a href="profile_edit.html" class="flex gap-4 items-center py-2 px-4">
+                                    <img src="../images/icons/profile/settings.svg" class="w-6" alt="">
+                                    Paramètres
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <div class="-ml-4 pl-4 text-gray-600 dark:text-gray-300 pt-8 border-t">
+                            
+                            <span class="text-sm text-green-400 tracking-wider">Event All</span>
+                            <p class="text-xs text-gray-400 mt-4">&copy; Copyright 2021 | Tous droits réservés</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="bg-white md:rounded-lg md:shadow-md md:p-8 p-4 md:mt-8 mt-4">
-                        <h2 class="text-gray-700 text-2xl font-semibold">Informations personnelles</h2>
+                <div class="lg:w-6/12 m-auto ">
+                
+
+                    <div class="bg-white md:rounded-lg lg:shadow-md lg:p-8 pt-20 pb-8 md:px-16 p-4 md:mt-8 mt-4 lg:mx-0 md:-mx-16">
+                        <h2 class="text-gray-700 md:text-2xl text-xl font-semibold">Informations personnelles</h2>
                         <form action="" method="" class="md:mt-8 mt-4 md:space-y-8 space-y-4">
                             <div class="space-y-4">
                                 <label for="name" class="text-gray-500">Nom </label>
@@ -93,58 +170,46 @@
                     
                 </div>
 
-                <div class="lg:w-4/12 lg:mt-0 mt-4">
-                    <div class="grid lg:sticky top-8">
-                        <div class="p-4 bg-white md:rounded-lg md:shadow-md">
-                            <div class="flex gap-6">
-                                <img src="../images/achievement.svg" class="w-20" alt="">
-                                <div>
-                                    <h5 class="text-gray-700 text-xl font-medium">Réservation</h5>
-                                    <p class="text-gray-500 mt-4">2 des vos salles ont été réservées cette semaine</p>
-                                </div>
-                            </div>
+                <div class="lg:w-3/12 ml-auto">
+                    <div class="w-11/12 ml-auto sticky top-20 lg:block hidden">
+                        <h3 class="text-lg font-medium text-gray-600">Publicité</h3>
+                        <div class="mt-4">
+                            <a href="">
+                                <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-lg w-full h-32 object-cover" alt="">
+                            </a>
                         </div>
-
-                        <div class="mt-4 bg-white md:rounded-lg md:shadow-md p-4">
-                            <h4 class="text-gray-700 font-medium text-xl">Salles</h4>
-    
-                            <div class="grid grid-cols-3 gap-2 mt-4">
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                                <a href="room.html">
-                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" class="rounded-md" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/splide.min.js"> </script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.events', {
+                carousel:true,
+                perPage :2,
+                perMove : 1,
+                autoHeight : true,
+                pagination:false,
+                arrows : true ,   
+                autoplay:false,
+                breakpoints : {
+                    640: {
+                        perPage:1,
+                        autoplay : false,
+                        arrows : false,
+                    },
+                    768: {
+                        perPage: 3,
+                        autoplay : false,
+                        arrows:false,
+                    }
+                }
+            } ).mount();
+        } );
+    </script>
 </body>
 </html>
