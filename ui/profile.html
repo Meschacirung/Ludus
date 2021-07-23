@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
 
     <link rel="stylesheet" href="../style/tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -16,55 +16,76 @@
     <header class="bg-gray-100 bg-opacity-50 backdrop-filter backdrop-blur-2xl z-50 fixed top-0 lg:pt-3 left-0 right-0">
         <nav role="navigation">
             <div class="lg:bg-transparent bg-white lg:border-none border-b border-gray-100 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-8 md:px-16 ">
-                <div class="relative w-full flex gap-4 items-center justify-between bg-white lg:rounded-lg px-4 lg:py-1 py-2">
+                <div class="relative w-full flex md:gap-4 gap-2 items-center justify-between bg-white lg:rounded-lg lg:px-4 md:px-0 px-4 lg:py-1 md:py-2 py-1">
 
                     <div>
                         <h2 class="text-green-500 text-2xl">Ludus</h2>
                     </div>
 
-                    <div class="lg:w-4/12 w-7/12 lg:-ml-36">
-                        <form action="">
-                            <div class="relative w-full">
-                                <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto left-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
-                                        <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
-                                    </svg> 
+                    <div class="flex justify-between items-center md:gap-4 lg:w-9/12 gap-2">
+                        <div class="md:w-6/12 w-min">
+                            <form action="">
+                                <div class="relative w-full">
+                                    <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto md:left-4 left-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
+                                            <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
+                                        </svg> 
+                                    </div>
+                                    <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full md:rounded rounded-full py-3 pr-4 md:pl-12 pl-7 bg-gray-100 outline-none focus:bg-white focus:shadow-md transition-all">                         
                                 </div>
-                                <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full rounded py-3 pr-4 pl-12 bg-gray-100 outline-none focus:bg-white focus:shadow-md transition-all">                         
+                            </form>
+                        </div>
+    
+                        <div class="flex items-center md:gap-4 gap-2">
+    
+                            <a href="" class="relative w-10 h-10 bg-gray-200 cursor-pointer rounded-full bg-opacity-75 hover:bg-opacity-100 text-gray-500 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="w-5 h-full m-auto" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                                </svg>
+    
+                                <div class="h-3 w-3 rounded-full top-0 right-0 border-2 border-white bg-red-500 absolute"></div>
+                            </a>
+    
+                            <a href="" class="w-10 h-10 bg-gray-200 cursor-pointer rounded-full bg-opacity-75 hover:bg-opacity-100 text-gray-500 transition-all duration-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-full m-auto" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                </svg>
+                            </a>
+    
+                            <div class="user">
+                                <button class="p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                                </button>
+    
+                                <div style="z-index:200;" class="absolute md:right-0 right-2 top-20 -mt-4 w-max">
+                                    <div class="user-dropdown bg-white rounded-lg px-4 shadow-md h-0 overflow-y-hidden transition-all duration-300">
+                                        <h5 class="text-lg text-gray-700 font-medium mt-4">Méschac Irung</h5>
+                                        <ul class="-mx-3 pt-1 mt-4 border-t">
+                                            <li>
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/favorites.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Mon profil</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/profile/settings.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Paramètres</p>
+                                                </a>
+                                            </li>
+                                            <li class="mb-1">
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/profile/log-out.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Se déconnecter</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                </div>
                             </div>
-                        </form>
-                    </div>
-
-                    <div class="user">
-                        <button class="p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
-                            <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
-                        </button>
-
-                        <div style="z-index:200;" class="absolute md:right-0 right-2 top-20 -mt-4 w-max">
-                            <div class="user-dropdown bg-white rounded-lg px-4 shadow-md h-0 overflow-y-hidden transition-all duration-300">
-                                <h5 class="text-lg text-gray-700 font-medium mt-4">Méschac Irung</h5>
-                                <ul class="-mx-3 pt-1 mt-4 border-t">
-                                    <li>
-                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
-                                            <img src="../images/icons/favorites.svg" class="w-6" alt="icon Paramètres">
-                                            <p class="text-gray-600">Mon profil</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
-                                            <img src="../images/icons/profile/settings.svg" class="w-6" alt="icon Paramètres">
-                                            <p class="text-gray-600">Paramètres</p>
-                                        </a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
-                                            <img src="../images/icons/profile/log-out.svg" class="w-6" alt="icon Paramètres">
-                                            <p class="text-gray-600">Se déconnecter</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -441,11 +462,13 @@
                                 </div>
                                 
 
-                                <button class="h-8 w-8 -mr-2 rounded-full flex justify-center items-center bg-gray-200 bg-opacity-0 hover:bg-opacity-75 focus:bg-opacity-100 transition-all">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                    </svg>
-                                </button>
+                                <div class="h-8 w-8 -mr-2 rounded-full flex justify-center items-center bg-gray-200 bg-opacity-0 hover:bg-opacity-75 focus:bg-opacity-100 transition-all">
+                                    <a href="chat.html" title="Etendre">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+                                            <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                             <!---/ Chat head --->
 

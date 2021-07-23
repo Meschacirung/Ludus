@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="../style/tailwind.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-200">
+    <div class="flex">
+        <div class="lg:w-4/12">
+            <div class="bg-white p-8 h-screen">
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-2 items-center transition-all duration-300">
+                        <button id="backHome" class="-ml-2 w-10 h-10 chatConv  hidden rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-90">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 m-auto fill-current text-gray-500" viewBox="0 0 24 24">
+                                <path id="Icon_material-arrow_back" data-name="Icon material-arrow_back" d="M30,16.5H11.745L20.13,8.115,18,6,6,18,18,30l2.115-2.115L11.745,19.5H30Z" transform="translate(-6 -6)"/>
+                            </svg>
+                        </button>
+                        <div>
+                            <h2 class="text-gray-700 text-xl font-medium">Chat</h2>
+                            <p class="text-xs text-gray-500 hidden chatConv">Avec User Name</p>
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="h-8 w-8 -mr-2 rounded-full flex justify-center items-center bg-gray-200 bg-opacity-0 hover:bg-opacity-75 focus:bg-opacity-100 transition-all">
+                        <a href="chat.html" title="Etendre">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fullscreen-exit" viewBox="0 0 16 16">
+                                <path d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-4 transition-all duration-300">
+                    <form action="">
+                        <div class="relative w-full">
+                            <div class="absolute top-0 bottom-0 h-full flex items-center mb-auto left-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current text-gray-500" viewBox="0 0 35.997 36.004">
+                                    <path id="Icon_awesome-search" data-name="search" d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"></path>
+                                </svg> 
+                            </div>
+                            <input type="search" placeholder="Rechercher" name="search" id="search" class="text-sm w-full rounded py-3 pr-4 pl-12 bg-gray-100 outline-none focus:bg-white focus:shadow-md transition-all">                         
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-4 -mx-8">
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/davisuko-2FdIvx7sy3U-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/chasse-sauvage-fSJSiczZBVQ.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/davisuko-2FdIvx7sy3U-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                    <div class="p-2 px-8 flex items-center justify-between gap-3 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-all cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="../images/chasse-sauvage-fSJSiczZBVQ.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-md text-gray-600 font-medium -mb-1">User name</h4>
+                                <span class="text-sm text-gray-400">Bonjour</span>
+                            </div>
+                        </div>
+                        <span class="text-sm text-gray-400">16:34'</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-5/12 border-l border-r z-50">
+            <div class="h-screen relative">
+                <div class="bg-white z-50 absolute left-0 right-0 w-full top-0 lg:px-8 md:px-16 px-4">
+                    <div class="py-2">
+                        <h2 class="text-gray-700 text-lg font-medium">David K.</h2>
+                        <p class="text-xs text-gray-500">En ligne</p>
+                    </div>
+                </div>
+
+                <div class="h-screen scrollbar-black scroller">
+                    <div class="px-4 py-20 transition duration-300">
+                        <div class="msg-left md:w-8/12 lg:w-10/12 w-10/12 px-4 ">
+                            <div class="max-w-sm relative">
+                                <div class="z-20 absolute -bottom-3 transform scale-75 hover:scale-90 right-6 w-max px-2 py-1 text-gray-500 bg-white shadow-md rounded-full transition-all">
+                                    <p class="text-sm">08h 56</p>
+                                </div>
+    
+                                <div class="z-20 relative">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="border-8 border-gray-200 h-12 w-12 rounded-full object-cover z-10">
+                                </div>
+                                
+                                <div class="h-7 w-7 bg-white -mt-7 z-10"></div>
+                                <div class="bg-white p-3 rounded-b-2xl rounded-r-2xl">
+                                    <p class="text-sm leading-normal text-gray-700">Obcaecati quisquam fugit ad recusandae necessitatibus tempora!</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="msg-right ml-auto w-10/12 px-4 relative">
+                            <div class="max-w-sm ml-auto">
+                                <div class="z-20 absolute -bottom-3 transform scale-75 hover:scale-90 right-6 w-max px-2 py-1 text-gray-500 bg-white shadow-md rounded-full transition-all">
+                                    <p class="text-sm flex items-center gap-2">09h 46 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-4 fill-current stroke-current text-green-400" viewBox="0 0 28.243 24.387">
+                                            <path id="Icon_feather-check" data-name="Icon feather-check" d="M30,9,13.5,25.5,6,18" transform="translate(-3.879 -2.613)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current stroke-current text-green-400" viewBox="0 0 28.243 24.387">
+                                            <path id="Icon_feather-check" data-name="Icon feather-check" d="M30,9,13.5,25.5,6,18" transform="translate(-3.879 -2.613)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                            <path id="Icon_feather-check-2" data-name="Icon feather-check" d="M23.97,9,11.616,21.355,6,15.739" transform="translate(-1.879 -6.879)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                        </svg>                                                      
+                                      </p>
+                                </div>
+    
+                                <div class="z-20 relative w-max ml-auto">
+                                    <img src="../images/davisuko-2FdIvx7sy3U-unsplash.jpg" alt="" class="border-8 border-gray-200 h-12 w-12 rounded-full object-cover z-10">
+                                </div>
+                                
+                                <div class="h-7 w-7 ml-auto bg-indigo-500 -mt-7 z-10"></div>
+                                <div class="bg-gradient-to-b from-indigo-500 to-purple-500 p-3 rounded-b-2xl rounded-l-2xl relative">
+                                    <p class="text-sm leading-normal text-white">🤣🤣🤣🤣🎉🌹😢 quisquam fugit ad recusandae necessitatibus tempora!</p>
+                                    <div class="absolute bottom-2 right-2 flex gap-2 items-center">
+                                        <div title="Lu" class="h-2 w-2 rounded-full bg-green-300"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="msg-left w-10/12 px-4 ">
+                            <div class="max-w-sm relative">
+                                <div class="z-20 absolute -bottom-3 transform scale-75 hover:scale-90 right-6 w-max px-2 py-1 text-gray-500 bg-white shadow-md rounded-full transition-all">
+                                    <p class="text-sm">08h 56</p>
+                                </div>
+    
+                                <div class="z-20 relative">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="border-8 border-gray-200 h-12 w-12 rounded-full object-cover z-10">
+                                </div>
+                                
+                                <div class="h-7 w-7 bg-white -mt-7 z-10"></div>
+                                <div class="bg-white p-3 rounded-b-2xl rounded-r-2xl">
+                                    <p class="text-sm leading-normal text-gray-700">Obcaecati quisquam fugit ad recusandae 😢🤣🤣🎉🎉🙌🙌🙌😜💖😜😜🐱‍🏍🐱‍🏍🤔😆🎁🎨🎨🎨🎨🎑</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="msg-right ml-auto w-10/12 px-4 relative">
+                            <div class="max-w-sm ml-auto">
+                                <div class="z-20 absolute -bottom-3 transform scale-75 hover:scale-90 right-6 w-max px-2 py-1 text-gray-500 bg-white shadow-md rounded-full transition-all">
+                                    <p class="text-sm flex items-center gap-2">08h 56 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-current stroke-current text-green-400" viewBox="0 0 28.243 24.387">
+                                            <path id="Icon_feather-check" data-name="Icon feather-check" d="M30,9,13.5,25.5,6,18" transform="translate(-3.879 -2.613)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-4 fill-current stroke-current text-green-400" viewBox="0 0 28.243 24.387">
+                                            <path id="Icon_feather-check" data-name="Icon feather-check" d="M30,9,13.5,25.5,6,18" transform="translate(-3.879 -2.613)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                            <path id="Icon_feather-check-2" data-name="Icon feather-check" d="M23.97,9,11.616,21.355,6,15.739" transform="translate(-1.879 -6.879)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                        </svg>                                                      
+                                      </p>
+                                </div>
+    
+                                <div class="z-20 relative w-max ml-auto">
+                                    <img src="../images/davisuko-2FdIvx7sy3U-unsplash.jpg" alt="" class="border-8 border-gray-200 h-12 w-12 rounded-full object-cover z-10">
+                                </div>
+                                
+                                <div class="h-7 w-7 ml-auto bg-indigo-500 -mt-7 z-10"></div>
+                                <div class="bg-gradient-to-b from-indigo-500 to-purple-500 p-3 rounded-b-2xl rounded-l-2xl">
+                                    <p class="text-sm leading-normal text-white"> Voluptatum est neque veritatis, vitae tenetur, rem ducimus esse, sapiente vel? Alias, fugit aliquam. Natus, nemo consectetur! 🤣🤣🤣🤣🎉🌹😢 quisquam fugit ad recusandae necessitatibus tempora!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white z-50 absolute left-0 right-0 w-full bottom-0 lg:px-8 md:px-16 px-4">
+                    <form action="" class="w-full relative flex items-center text-gray-400 focus-within:text-green-500">
+                        <input type="text" placeholder="Dites quelque chose" class="placeholder-gray-500 focus:text-gray-600 text-sm py-4 px-4 bg-white bg-opacity-60 w-full outline-none">
+                        <div class="absolute bottom-0 my-auto h-max right-0 top-2">
+                            <button type="submit" class="py-2 px-3  bg-gray-300 bg-opacity-0 hover:bg-opacity-50 focus:bg-opacity-80 rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 -ml-1 fill-current" viewBox="0 0 38.085 38.085">
+                                    <path d="M30.649,4.563,4.838,15.813a.592.592,0,0,0,.021,1.076l6.982,3.945a1.126,1.126,0,0,0,1.287-.127L26.895,8.838c.091-.077.309-.225.394-.141s-.049.3-.127.394L15.251,22.507a1.122,1.122,0,0,0-.113,1.343L19.7,31.17a.594.594,0,0,0,1.069-.014L31.444,5.344A.592.592,0,0,0,30.649,4.563Z" transform="translate(17.266 -6.352) rotate(41)"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="lg:w-3/12">
+
+            <div class="bg-white h-screen">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
