@@ -11,10 +11,10 @@
 
 </head>
 <body class="overflow-hidden h-screen rel">
-    <header class="relative z-50">
+    <header class="relative" style="z-index:200;">
         <nav role="navigation" class="">
             <div class="fixed top-3 left-0 right-0 flex justify-center lg:max-w-screen-xl max-w-screen-lg m-auto lg:px-0 md:px-16 px-4 pb-6">
-                <div class="w-full md:flex gap-4 items-center justify-between bg-white shadow-md rounded-md md:-mx-4 px-4 py-2 md:overflow-x-hidden overflow-x-auto">
+                <div class="w-full md:flex gap-4 items-center justify-between bg-white shadow-md rounded-md md:-mx-4 px-4 py-2 relative">
 
                     <div class="flex justify-between items-center">
                         <div>
@@ -56,9 +56,44 @@
                                 </a>
                             </li>
                         </ul>
-                        
-                        <div class="md:px-0 px-4 -mr-2 md:py-0 py-6">
-                            <a href="" class="text-center block py-3 md:px-6 px-4 bg-green-400 hover:bg-green-500 focus:bg-green-700 transition-all duration-200  text-white md:text-md text-sm">Contact</a>
+
+                        <div class="md:px-0 px-4 flex items-center">
+                            <a href="" class="block py-3 md:px-6 px-4 bg-green-400 hover:bg-green-500 focus:bg-green-700 transition-all duration-200  text-white md:text-md text-sm">Contact</a>
+                            
+                            <div class="user lg:ml-8 pl-8 border-l w-max flex justify-center items-center gap-4">
+                                <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-9 w-9 rounded-full object-cover">
+                                <p class="text-sm text-blue-500 font-medium cursor-pointer">Mon compte</p>
+                                <button class="hidden p-1 rounded-full bg-gray-100 bg-opacity-0 hover:bg-opacity-100 transition-opacity duration-300">
+                                    <img src="../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg" alt="" class="h-9 w-9 rounded-full object-cover">
+                                </button>
+        
+                                <div style="z-index:4000;" class="absolute lg:right-0 md:right-4 right-2 top-16 w-max">
+                                    <div class="user-dropdown bg-white rounded-lg px-4 shadow-md h-0 overflow-y-hidden transition-all duration-300">
+                                        <h5 class="text-lg text-gray-700 font-medium mt-4">Méschac Irung</h5>
+                                        <ul class="-mx-3 pt-1 mt-4 border-t">
+                                            <li>
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/favorites.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Mon profil</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/profile/settings.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Paramètres</p>
+                                                </a>
+                                            </li>
+                                            <li class="mb-1">
+                                                <a href="" class="flex gap-4 items-center px-4 py-2 bg-gray-50 rounded-md bg-opacity-0 hover:bg-opacity-100 transition-all">
+                                                    <img src="../images/icons/profile/log-out.svg" class="w-6" alt="icon Paramètres">
+                                                    <p class="text-gray-600">Se déconnecter</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
