@@ -37,6 +37,10 @@ body{
     }
 }
 
+.scroll-users::-webkit-scrollbar{
+    width:4px !important;
+}
+
 .scrollbar-black::-webkit-scrollbar-track {
     @apply rounded-full bg-transparent
 }

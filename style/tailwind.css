@@ -32267,6 +32267,10 @@ body{
   }
 }
 
+.scroll-users::-webkit-scrollbar{
+  width:4px !important;
+}
+
 .scrollbar-black::-webkit-scrollbar-track {
   border-radius: 9999px;
   background-color: transparent
@@ -32323,7 +32327,8 @@ body{
 }
 
 .user:hover div{
-  height:200px !important;
+  height:20
+    0px !important;
 }
 
 @media (min-width: 640px) {
